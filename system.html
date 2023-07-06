@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star System</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Helvetica;
+            color: cyan;
+            background-color: black;
+            padding-left: 10%;
+        }
+
+        #display {
+            display: block;
+        }
+
+        #display > div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #divPlanetInfo {
+            width:30%;
+        }
+
+        #divPlanetInfo, #divSystemMap {
+            border-style: solid;
+            border-color: cyan;
+            border-width: 3pt;
+            border-radius: 10pt;
+            padding:5pt;
+            margin:5pt;
+        }
+
+        h2 {
+            padding:0%;
+            margin: 0%;
+        }
+
+        .entry {
+            border-style: solid;
+            border-radius: 10pt;
+            padding:10pt;
+        }
+
+        .entry > div {
+            display:none;
+            padding-top: 10pt;
+        }
+
+        .entry:hover > div {
+            display:block;
+        }
+    </style>
+    <h1 id="h1SystemName"></h1>
+
+    <div id="display">
+        <div id="divSystemMap">
+    
+        </div>
+        <div id="divPlanetInfo">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js" integrity="sha512-+Ru50BzEpZjlFzVnjSmJfYFPFfY2hS0Kjlu/IvqaJoux7maF5lJrRVUJWJ2LevPls7rd242GLbWEt+zAo4OVVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/scripts/mods-eng-basic.js"></script>
+    <script src="/scripts/tracery.js"></script>
+    <script src="/scripts/system.js"></script>
+</body>
+</html>
