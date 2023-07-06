@@ -63,6 +63,19 @@ const grammarObject = {
         "the #alternateName.capitalize# #businessType.capitalize#"
     ],
     "businessType":["shop", "diner", "grille", "bank", "salon", "restaurant", "consultancy", "firm", "cafe", "#businessType.capitalize# and #businessType.capitalize#"]
+    "factoid":[
+        "It is also the birthplace of the #famous# #person#, #personName.capitalize# #alternateName.capitalize#.",
+        "It is also known to be the crash site of the #shipName#."
+    ],
+    "famous" : ["infamous", "noted", "well-loved", "ever popular"],
+    "person" : ["politician", "activist", "entrepeneur", "chef", "warlord", "outlaw"],
+    "personName" : ["#cons##vow#nson","H#vow#nry","M#vow#tt","S#vow#s#vow#n","#vow##cons#ietta","#vow##cons##vow#"],
+    "shipName" : [
+        "#alternateName.capitalize#'s Widow",
+        "#alternateName.capitalize#'s Folly",
+        "#alternateName.capitalize#'s Pride",
+        "#alternateName.capitalize#'s Hope"
+    ]
 };
 let grammar = tracery.createGrammar(grammarObject);
 grammar.addModifiers(baseEngModifiers);
