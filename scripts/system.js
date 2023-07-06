@@ -62,7 +62,7 @@ const grammarObject = {
         "#alternateName.capitalize#'s #businessType.capitalize#",
         "the #alternateName.capitalize# #businessType.capitalize#"
     ],
-    "businessType":["shop", "diner", "grille", "bank", "salon", "restaurant", "consultancy", "firm", "cafe", "#businessType.capitalize# and #businessType.capitalize#"]
+    "businessType":["shop", "diner", "grille", "bank", "salon", "restaurant", "consultancy", "firm", "cafe", "#businessType.capitalize# and #businessType.capitalize#"],
     "factoid":[
         "It is also the birthplace of the #famous# #person#, #personName.capitalize# #alternateName.capitalize#.",
         "It is also known to be the crash site of the #shipName#."
